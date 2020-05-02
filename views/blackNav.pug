@@ -1,0 +1,16 @@
+nav
+  ul.navigation
+    li.nav-line
+      a(href='/#feature-section').black-anchors FEATURES   
+    li.nav-line
+      a(href='/#review').black-anchors REVIEWS
+    li.nav-line
+      a(href='/plans').black-anchors PLANS
+    if user
+      li.nav-line
+          a(href='/me').black-anchors #{user.name}
+      li.nav-line
+          a(href="/logout").black-anchors LOGOUT
+    else
+      li.nav-line
+          a(href='/login').black-anchors LOGIN

@@ -1,0 +1,23 @@
+extends base
+block content
+    h2 Signup Page
+    .container-form
+      form.signup
+          .entry
+            .entry-text
+              | Name
+            input(type='text', name='name', placeholder='Your Name')
+          .entry
+            .entry-text
+              | Email
+            input(type='email', name='email', placeholder='Your Email')
+          .entry
+            .entry-text
+              | Password
+            input(type='password', name='password', placeholder='Your Password')
+          .entry
+            .entry-text
+              | Confirm Password
+            input(type='password', name='confirmPassword', placeholder='Confirm Password')
+          .btn-parent
+            button(type="submit").btn.btn-primary Signup      
